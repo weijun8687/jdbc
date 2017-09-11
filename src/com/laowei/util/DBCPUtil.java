@@ -15,6 +15,7 @@ public class DBCPUtil {
 
     static {
         try {
+            // 获取配置文件
             InputStream inputStream = DBCPUtil.class.getClassLoader().getResourceAsStream("dbcpconfig.properties");
             Properties properties = new Properties();
             properties.load(inputStream);

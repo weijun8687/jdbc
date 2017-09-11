@@ -2,7 +2,8 @@ package com.laowei.domain;
 
 import java.io.Serializable;
 
-public class User implements Serializable {
+public class Account implements Serializable {
+
     public int getId() {
         return id;
     }
@@ -19,16 +20,16 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public String getSex() {
-        return sex;
+    public float getMoney() {
+        return money;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setMoney(float money) {
+        this.money = money;
     }
 
     private int id;
     private String name;
-    private String sex;
+    private float money;
 
 }
